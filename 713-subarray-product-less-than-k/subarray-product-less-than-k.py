@@ -5,8 +5,7 @@ class Solution(object):
         count = 0
         prod = 1
         left = 0
-        n = len(nums)
-        for right in range(n):
+        for right in range(0,len(nums)):
             prod *= nums[right]
             while prod >= k:
                 prod //= nums[left]
